@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MySwagApp.SwagListPage"
+             Title="Swag Ordering App" BackgroundColor="BlanchedAlmond" >
+
+
+    <StackLayout Margin="20"
+                 VerticalOptions="StartAndExpand" >
+        
+            <Label Text="Name" />
+        <Entry Text="{Binding Name}" />
+        <Label Text="Gender" />
+        <Entry Text="{Binding Gender}" />
+        <Label Text="Size" />
+        <Entry Text="{Binding Size}" />
+        <Label Text="Date" />
+        <Entry Text="{Binding Date}" />
+        <Label Text="Color" />
+        <Entry Text="{Binding Color}" />
+        <Label Text="Address" />
+        <Entry Text="{Binding Address}" />
+        <Button Text="Save"
+                    BackgroundColor="DeepPink"
+                    Clicked="OnSaveClicked" />
+        <Button Text="Delete"
+                    BackgroundColor="DeepPink"
+                    Clicked="OnDeleteClicked" />
+        <Button Text="Cancel"
+                    BackgroundColor="DeepPink"
+                    Clicked="OnCancelClicked" />
+           
+    </StackLayout>
+
+</ContentPage>
+    
